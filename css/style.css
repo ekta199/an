@@ -1,0 +1,148 @@
+/* import dosis font from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500;600&display=swap');
+
+
+body {
+    font-family: 'Dosis'sans-serif;
+}
+
+/* background image*/
+ .container-fluid {
+    background: url(img/girls.png);
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.custom_nav {
+    padding: 35px 0;
+}
+
+.custom_nav>a {
+    text-transform: uppercase;
+    color: #111;
+    transition: .5s all ease;
+    font-weight: 700;
+
+}
+
+.custom_nav>a:hover {
+    color: #5B2A9C !important;
+    transform: scale(1.2);
+}
+
+#navbarNav .nav-link {
+    color: #111;
+    padding: 6px 25px;
+    transition: .5s all ease;
+    text-transform: uppercase;
+
+}
+
+#navbarNav .nav-link:hover {
+    color: #5B2A9C;
+    box-shadow: 1px 1px 2px #c9c9c9;
+    transform: scale(1.1);
+
+}
+
+.page-text h2 {
+    display: inline-block;
+    color: #111;
+    font-size: 40px;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    animation-delay: .3s;
+    animation-duration: 1s;
+}
+
+.page-text h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #b31c49;
+    z-index: -1;
+    transition: .5s all cubic-bezier(0.51, 1.35, 0.51, 1.35);
+}
+
+.page-text h2:hover::before {
+    left: 50%;
+}
+
+.page-text p {
+    color: #333;
+    font-size: 15px;
+    text-align: justify;
+    padding: 30px 0;
+    animation-delay: .3s;
+    animation-duration: 1.25s;
+
+}
+
+.page-text a.shop-btn {
+    display: inline-block;
+    padding: 7px 30px;
+    background: #b31c49;
+    border: 2px solid transparent;
+    text-decoration: none;
+    color: #111;
+    border-radius: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .5s all ease-in;
+    animation-delay: 9s;
+    animation-duration: 1s;
+}
+
+.page-text a.shop-btn:hover {
+    background: none;
+    border: 2px solid #b31c49;
+    color: #b31c49;
+}
+
+.social-media {
+    margin-right: 60px;
+    margin-bottom: 30px;
+    animation-delay: 5s;
+
+}
+
+.social-media  a{
+    color: #111;
+    margin-right: 15px;
+}
+
+.custom-section .banner {
+    animation-delay: .3s;
+    animation-duration: 1.5s;
+
+}
+
+@media screen and (max-width :991.98px) {
+    .page-text h2 {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width :767.98px) {
+    .custom-section {
+        flex-direction: column-reverse;
+    }
+
+    .banner {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width :440px) {
+    .page-text h2 {
+        font-size: 32px;
+    }
+}
